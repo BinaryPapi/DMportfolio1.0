@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Din's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23cb6f5c2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- header container starts -->
+    <div id="header">
+    
+        <div id="navbar">
+            <!-- nav bar -->
+            <nav>
+                <a href="#header"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- introduction and name -->
+            <!--<div class="header-text">
+                <p>Web Development</p>
+                <h1> Hey, I'm <span>Din</span><br>the web developer!</h1>
+            </div>-->
+        </div>
+        <!-- introduction and name -->
+        <div class="header-text">
+            <p>Web Development</p>
+            <h1> Hey, I'm <span>D</span>IN<br>the web developer!</h1>
+        </div>
+    </div>
+    
+
+    <!-- the "about" section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Oh Hello again! My name is Din Mohammed and I am a Front-End Developer in the city of Brotherly Love, Philadelphia. I would like to thank you, first and foremost, for taking the time to visit my website. I am eager to show you all what I have to offer through my creativity and knowledge of the tech industry. My journey started in the beginning of 2020 during the pandemic and by the end of August 2020, I was a certified web developer! Today I enjoy creating web applications by utilizing the latest technologies and the vast sea of websites the internet has to offer. So grab a snack, take a seat, and enjoy browsing through my portfolio. Join me, whether you need a website, would like to hire me, or just want to be apart of my journey. Check me out and <a href="#contact">contact me!</a></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Web Developer at Lansdale Express</li>
+                            <li><span>2020 - 2021</span><br>UX/UI and Web Design at Hussian College</li>
+                            <li><span>2019 - 2020</span><br>Help Desk Support at MetroPCS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>MIS at Fox of Business, Temple University </li>
+                            <li><span>2020</span><br>Ceritification in Frontend Web Development from Hussian College of Philadelphia</li>
+                            <li><span>2018</span><br>Associates in Engineering from Montgomery County Community College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- "services" section starts here -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fas fa-code"></i> <!--CODE icon-->
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis facilis totam vel praesentium aliquid doloribus nesciunt officia esse delectus?</p>
+                    <a href="#">Learn More!</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i> <!--CROP icon-->
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis facilis totam vel praesentium aliquid doloribus nesciunt officia esse delectus?</p>
+                    <a href="#">Learn More!</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i> <!--APP icon-->
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis facilis totam vel praesentium aliquid doloribus nesciunt officia esse delectus?</p>
+                    <a href="#">Learn More!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio starts here -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Go Back Up!</i></a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>dindinsemail@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>2674986256</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.linkedin.com/in/din-mohammed-87951a184/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/dMohammedResume.docx.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name
+                        " required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Din</p>
+        </div>
+    </div>
+
+    <!-- javascript starts here -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            // this allows the active tabs to deiplay the information for each tab
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"; 
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"; 
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYqcFHjS6gCo4ExZOJ_gQkyU1Hl3whDmEeXJJt5nE38u5RZ88qsajiBioNRYfGDR6WFw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
